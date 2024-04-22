@@ -2,7 +2,7 @@
   hosts: k8s-master
   become: true
   tasks:
-  - name: Get the Maste Node Private IP
+  - name: Define the Maste Node Private IP on the shell
     shell:
       cmd: MASTER_PRIVATE_IP=$(ip addr show eth0 | awk '/inet / {print $2}' | cut -d/ -f1)
 
