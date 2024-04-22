@@ -2,7 +2,7 @@
 
 **For K8s Master Node Configuration:**
 
-1. **Get the Master Node Private IP**: Retrieves the private IP address of the master node using shell commands.
+1. **Get the Master Node Private IP**: Sets the `MASTER_PRIVATE_IP` variable having the private IP address of the master node using shell commands.
 
 2. **Define the POD_CIDR Variable**: Sets the `POD_CIDR` variable to `192.168.0.0/16` in the shell.
 
