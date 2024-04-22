@@ -17,7 +17,7 @@
 
   - name: Instialize the Kubernetes Cluster
     shell:
-      cmd: kubeadm init --apiserver-advertise-address="$MASTER_PRIVATE_IP" --apiserver-cert-extra-sans="$MASTER_PRIVATE_IP" --pod-network-cidr="$POD_CIDR" --node-name "$NODENAME" --ignore-preflight-errors Swap
+      cmd: kubeadm init --apiserver-advertise-address="$MASTER_PRIVATE_IP" --apiserver-cert-extra-sans="$MASTER_PRIVATE_IP" --pod-network-cidr="$POD_CIDR" --node-name="$NODENAME" --ignore-preflight-errors Swap
     register: kubeinit_details
 
   - name: output of the Kubeadm init command
