@@ -1,7 +1,15 @@
 ---
 # Source: calico/templates/calico-kube-controllers.yaml
 # This manifest creates a Pod Disruption Budget for Controller to allow K8s Cluster Autoscaler to evict
+# I have made some changes in the default calico.yaml file
+# The default file you can get at --> https://raw.githubusercontent.com/projectcalico/calico/master/manifests/calico.yaml
 
+#            # Auto-detect the BGP IP address.
+#            - name: IP
+#              value: "autodetect"
+#            - name: IP_AUTODETECTION_METHOD
+#              value: "interface=eth0"
+### So that Calico can detect the actual Physical Network Card --> eth0 
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
