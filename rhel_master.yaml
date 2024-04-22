@@ -44,7 +44,7 @@
 
   - name: Configure the CNI using Calico
     shell:
-      cmd: kubectl apply -f https://raw.githubusercontent.com/Sayantan2k24/kubernetes-multinode-ansiible-aws/main/calico.yaml
+      cmd: kubectl apply -f https://raw.githubusercontent.com/Sayantan2k24/kubernetes-multinode-ansible-aws/main/calico.yaml
 
   - name: Generate join command
     command: kubeadm token create --print-join-command
