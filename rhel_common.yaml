@@ -1,4 +1,4 @@
-  name: Setup Kubernetes With Common Configurations
+- name: Setup Kubernetes With Common Configurations
   hosts: all
   become: true
   vars:
